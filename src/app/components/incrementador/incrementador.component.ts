@@ -8,6 +8,7 @@ import { Component, EventEmitter, Input, Output } from '@angular/core';
 export class IncrementadorComponent {
 
  @Input('valor') progreso: number = 40;
+ @Input() btnClass: string = 'btn btn-primary';
  
  @Output() valorSalida: EventEmitter<number> = new EventEmitter();
 
